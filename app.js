@@ -1,9 +1,9 @@
-let Real_Madrid = {
-  team_name: "Real Madrid",
-  city: "Madrid",
-  country: "spain",
-  top_scorers: [Ronaldo, Benzema, Hazard],
-  world_wide_fans: 798,
-};
+// let Atletico_Madrid = {
+//   team_name: "Atletico Madrid",
+//   city: "Madrid",
+//   country: "Spain",
+//   top_scorers: ["Aragonés", "Griezmann", "Torez"],
+//   world_wide_fans: 400,
+// };
 
-db.collection("teams").add(Real_Madrid);
+// db.collection("teams").add(Atletico_Madrid);
