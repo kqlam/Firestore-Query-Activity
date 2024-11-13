@@ -6,4 +6,4 @@
 //   world_wide_fans: 400,
 // };
 
-// db.collection("teams").add(Atletico_Madrid);
+// db.collection("teams").add(Aragonés);
