@@ -217,3 +217,34 @@ db.collection("teams")
     top_scorers: firebase.firestore.FieldValue.arrayRemove("Puyol"),
     top_scorers: firebase.firestore.FieldValue.arrayUnion("Deco"),
   });
+
+// Step 3 part b
+// Update jersey colors for Real Madrid
+db.collection("teams")
+  .doc("6EcwWoxTGWpImamTCN6t")
+  .update({
+    color: {
+      home: "White",
+      away: "Black",
+    },
+  });
+
+// Update jersey colors for Barcelona
+db.collection("teams")
+  .doc("GxLhNqljnDLtT1SclrXC")
+  .update({
+    color: {
+      home: "Red",
+      away: "Gold",
+    },
+  });
+
+// Update away jersey color for Real Madrid
+db.collection("teams").doc("6EcwWoxTGWpImamTCN6t").update({
+  "color.away": "Purple",
+});
+
+// Update away jersey color for Barcelona
+db.collection("teams").doc("GxLhNqljnDLtT1SclrXC").update({
+  "color.away": "Pink",
+});
