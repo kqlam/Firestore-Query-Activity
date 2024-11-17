@@ -220,24 +220,24 @@ db.collection("teams")
 
 // Step 3 part b
 // Update jersey colors for Real Madrid
-db.collection("teams")
-  .doc("6EcwWoxTGWpImamTCN6t")
-  .update({
-    color: {
-      home: "White",
-      away: "Black",
-    },
-  });
+let RM_color = {
+  home: "White",
+  away: "Black",
+};
+
+db.collection("teams").doc("6EcwWoxTGWpImamTCN6t").update({
+  color: RM_color,
+});
 
 // Update jersey colors for Barcelona
-db.collection("teams")
-  .doc("GxLhNqljnDLtT1SclrXC")
-  .update({
-    color: {
-      home: "Red",
-      away: "Gold",
-    },
-  });
+let Barcelona_color = {
+  home: "Red",
+  away: "Gold",
+};
+
+db.collection("teams").doc("GxLhNqljnDLtT1SclrXC").update({
+  color: Barcelona_color,
+});
 
 // Update away jersey color for Real Madrid
 db.collection("teams").doc("6EcwWoxTGWpImamTCN6t").update({
